@@ -5,6 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
+<<<<<<< HEAD
 	<string>Daily ToDo</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
@@ -26,6 +27,17 @@
 	<string>6.0</string>
 	<key>CFBundleName</key>
 	<string>Simple Daily ToDo List</string>
+=======
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIdentifier</key>
+	<string>AI-Enterprises.${PRODUCT_NAME:rfc1034identifier}</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -36,6 +48,7 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+<<<<<<< HEAD
 	<key>UILaunchImages</key>
 	<array>
 		<dict>
@@ -69,6 +82,8 @@
 			<string>{320, 480}</string>
 		</dict>
 	</array>
+=======
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -78,6 +93,11 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
+<<<<<<< HEAD
+=======
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
 	</array>
 </dict>
 </plist>

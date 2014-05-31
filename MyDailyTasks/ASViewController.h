@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+<<<<<<< HEAD
 #import <CoreData/CoreData.h>
 
 @interface ASViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, NSFetchedResultsControllerDelegate>
@@ -22,5 +23,9 @@
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+=======
+
+@interface ASViewController : UIViewController
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
 
 @end

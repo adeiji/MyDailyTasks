@@ -7,6 +7,7 @@
 //
 
 #import "ASAppDelegate.h"
+<<<<<<< HEAD
 #import <CoreData/CoreData.h>
 #import "ASViewController.h"
 
@@ -82,6 +83,17 @@
     return _managedObjectContext;
 }
 
+=======
+
+@implementation ASAppDelegate
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    // Override point for customization after application launch.
+    return YES;
+}
+							
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -101,11 +113,15 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
+<<<<<<< HEAD
     //Reload the data in the Table View so that it is up to date.  This is specifically if a day has passed because now the items that were supposed to be done the previous day will be displayed as red.
     UINavigationController *controller = (UINavigationController *) self.window.rootViewController;
     ASViewController *rootViewController = controller.viewControllers[0];
     
     [rootViewController.tableView reloadData];
+=======
+    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

@@ -21,6 +21,7 @@
 		CE19DC6D1879F2F4005FBCE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE19DC4F1879F2F3005FBCE4 /* UIKit.framework */; };
 		CE19DC751879F2F4005FBCE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE19DC731879F2F4005FBCE4 /* InfoPlist.strings */; };
 		CE19DC771879F2F4005FBCE4 /* MyDailyTasksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE19DC761879F2F4005FBCE4 /* MyDailyTasksTests.m */; };
+<<<<<<< HEAD
 		CE19DC821879F5A9005FBCE4 /* plussign.png in Resources */ = {isa = PBXBuildFile; fileRef = CE19DC811879F5A9005FBCE4 /* plussign.png */; };
 		CE19DC861879F7B0005FBCE4 /* NoTasksView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE19DC851879F7B0005FBCE4 /* NoTasksView.xib */; };
 		CE19DC881879F83C005FBCE4 /* uparrow.png in Resources */ = {isa = PBXBuildFile; fileRef = CE19DC871879F83C005FBCE4 /* uparrow.png */; };
@@ -65,6 +66,8 @@
 		CE74AF11187A44C600DE2314 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE74AF10187A44C600DE2314 /* TaskTableViewCell.xib */; };
 		CEE4377C187BAD6E004AD11A /* finished.png in Resources */ = {isa = PBXBuildFile; fileRef = CEE4377B187BAD6E004AD11A /* finished.png */; };
 		E300888488D14866B3D1426C /* libPods-MyDailyTasks.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 382AA4CE956B43E29ECBB632 /* libPods-MyDailyTasks.a */; };
+=======
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,8 +81,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		382AA4CE956B43E29ECBB632 /* libPods-MyDailyTasks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyDailyTasks.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A28FAD51B14CFC99CD685A /* Pods-MyDailyTasks.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDailyTasks.xcconfig"; path = "Pods/Pods-MyDailyTasks.xcconfig"; sourceTree = "<group>"; };
+=======
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
 		CE19DC481879F2F3005FBCE4 /* MyDailyTasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDailyTasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE19DC4B1879F2F3005FBCE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CE19DC4D1879F2F3005FBCE4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -99,6 +105,7 @@
 		CE19DC721879F2F4005FBCE4 /* MyDailyTasksTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyDailyTasksTests-Info.plist"; sourceTree = "<group>"; };
 		CE19DC741879F2F4005FBCE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE19DC761879F2F4005FBCE4 /* MyDailyTasksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyDailyTasksTests.m; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		CE19DC811879F5A9005FBCE4 /* plussign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plussign.png; path = imges/plussign.png; sourceTree = "<group>"; };
 		CE19DC851879F7B0005FBCE4 /* NoTasksView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoTasksView.xib; sourceTree = "<group>"; };
 		CE19DC871879F83C005FBCE4 /* uparrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = uparrow.png; path = ../../WineTastingApp/images/uparrow.png; sourceTree = "<group>"; };
@@ -145,6 +152,8 @@
 		CE74AF0E187A44A500DE2314 /* ASTaskCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASTaskCell.m; path = ../ASTaskCell.m; sourceTree = "<group>"; };
 		CE74AF10187A44C600DE2314 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
 		CEE4377B187BAD6E004AD11A /* finished.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = finished.png; path = imges/finished.png; sourceTree = "<group>"; };
+=======
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,11 +161,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				CE74AF0A187A06B800DE2314 /* CoreData.framework in Frameworks */,
 				CE19DC4E1879F2F3005FBCE4 /* CoreGraphics.framework in Frameworks */,
 				CE19DC501879F2F3005FBCE4 /* UIKit.framework in Frameworks */,
 				CE19DC4C1879F2F3005FBCE4 /* Foundation.framework in Frameworks */,
 				E300888488D14866B3D1426C /* libPods-MyDailyTasks.a in Frameworks */,
+=======
+				CE19DC4E1879F2F3005FBCE4 /* CoreGraphics.framework in Frameworks */,
+				CE19DC501879F2F3005FBCE4 /* UIKit.framework in Frameworks */,
+				CE19DC4C1879F2F3005FBCE4 /* Foundation.framework in Frameworks */,
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,13 +191,19 @@
 		CE19DC3F1879F2F3005FBCE4 = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				CE582991187CB4550003DA5D /* Default-568h@2x.png */,
 				CE74AF10187A44C600DE2314 /* TaskTableViewCell.xib */,
+=======
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
 				CE19DC511879F2F3005FBCE4 /* MyDailyTasks */,
 				CE19DC701879F2F4005FBCE4 /* MyDailyTasksTests */,
 				CE19DC4A1879F2F3005FBCE4 /* Frameworks */,
 				CE19DC491879F2F3005FBCE4 /* Products */,
+<<<<<<< HEAD
 				A2A28FAD51B14CFC99CD685A /* Pods-MyDailyTasks.xcconfig */,
+=======
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
 			);
 			sourceTree = "<group>";
 		};
@@ -198,12 +219,18 @@
 		CE19DC4A1879F2F3005FBCE4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				CE74AF09187A06B800DE2314 /* CoreData.framework */,
+=======
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
 				CE19DC4B1879F2F3005FBCE4 /* Foundation.framework */,
 				CE19DC4D1879F2F3005FBCE4 /* CoreGraphics.framework */,
 				CE19DC4F1879F2F3005FBCE4 /* UIKit.framework */,
 				CE19DC6A1879F2F3005FBCE4 /* XCTest.framework */,
+<<<<<<< HEAD
 				382AA4CE956B43E29ECBB632 /* libPods-MyDailyTasks.a */,
+=======
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -211,6 +238,7 @@
 		CE19DC511879F2F3005FBCE4 /* MyDailyTasks */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				CE58298A187CA6E70003DA5D /* App Delegate */,
 				CE582989187CA6C00003DA5D /* Views */,
 				CE19DC8D187A0257005FBCE4 /* Core Data */,
@@ -218,6 +246,13 @@
 				CE19DC841879F79C005FBCE4 /* Storyboards */,
 				CE19DC831879F796005FBCE4 /* XIB */,
 				CE19DC801879F599005FBCE4 /* images */,
+=======
+				CE19DC5A1879F2F3005FBCE4 /* ASAppDelegate.h */,
+				CE19DC5B1879F2F3005FBCE4 /* ASAppDelegate.m */,
+				CE19DC5D1879F2F3005FBCE4 /* Main.storyboard */,
+				CE19DC601879F2F3005FBCE4 /* ASViewController.h */,
+				CE19DC611879F2F3005FBCE4 /* ASViewController.m */,
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
 				CE19DC631879F2F3005FBCE4 /* Images.xcassets */,
 				CE19DC521879F2F3005FBCE4 /* Supporting Files */,
 			);
@@ -253,6 +288,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		CE19DC801879F599005FBCE4 /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -376,6 +412,8 @@
 			name = "App Delegate";
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -383,11 +421,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE19DC7A1879F2F4005FBCE4 /* Build configuration list for PBXNativeTarget "MyDailyTasks" */;
 			buildPhases = (
+<<<<<<< HEAD
 				0882BD472C7F47A1AD04C628 /* Check Pods Manifest.lock */,
 				CE19DC441879F2F3005FBCE4 /* Sources */,
 				CE19DC451879F2F3005FBCE4 /* Frameworks */,
 				CE19DC461879F2F3005FBCE4 /* Resources */,
 				02AB5FE359B74E8DAEE397D4 /* Copy Pods Resources */,
+=======
+				CE19DC441879F2F3005FBCE4 /* Sources */,
+				CE19DC451879F2F3005FBCE4 /* Frameworks */,
+				CE19DC461879F2F3005FBCE4 /* Resources */,
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
 			);
 			buildRules = (
 			);
@@ -426,9 +470,12 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Ade;
 				TargetAttributes = {
+<<<<<<< HEAD
 					CE19DC471879F2F3005FBCE4 = {
 						DevelopmentTeam = HJPTQ3N75W;
 					};
+=======
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
 					CE19DC681879F2F3005FBCE4 = {
 						TestTargetID = CE19DC471879F2F3005FBCE4;
 					};
@@ -458,6 +505,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				CE582985187C97D10003DA5D /* Icon.png in Resources */,
 				CE582990187CB41B0003DA5D /* spotlight-icon.png in Resources */,
 				CE582975187C97D10003DA5D /* Icon.png in Resources */,
@@ -499,6 +547,11 @@
 				CE582981187C97D10003DA5D /* Icon-Small-50.png in Resources */,
 				CE582979187C97D10003DA5D /* Icon-40.png in Resources */,
 				CE582970187C97D10003DA5D /* Icon-72@2x.png in Resources */,
+=======
+				CE19DC641879F2F3005FBCE4 /* Images.xcassets in Resources */,
+				CE19DC561879F2F3005FBCE4 /* InfoPlist.strings in Resources */,
+				CE19DC5F1879F2F3005FBCE4 /* Main.storyboard in Resources */,
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +565,7 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+<<<<<<< HEAD
 /* Begin PBXShellScriptBuildPhase section */
 		02AB5FE359B74E8DAEE397D4 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -545,6 +599,8 @@
 		};
 /* End PBXShellScriptBuildPhase section */
 
+=======
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
 /* Begin PBXSourcesBuildPhase section */
 		CE19DC441879F2F3005FBCE4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -552,11 +608,15 @@
 			files = (
 				CE19DC5C1879F2F3005FBCE4 /* ASAppDelegate.m in Sources */,
 				CE19DC621879F2F3005FBCE4 /* ASViewController.m in Sources */,
+<<<<<<< HEAD
 				CE19DC90187A0268005FBCE4 /* TaskDataModel.xcdatamodeld in Sources */,
 				CE19DC581879F2F3005FBCE4 /* main.m in Sources */,
 				CE74AF0F187A44A500DE2314 /* ASTaskCell.m in Sources */,
 				CE19DC8C1879FC82005FBCE4 /* ASAddTaskViewController.m in Sources */,
 				CE229CAC18838D2E0006BE8E /* ASTaskManagedObject.m in Sources */,
+=======
+				CE19DC581879F2F3005FBCE4 /* main.m in Sources */,
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -680,32 +740,50 @@
 		};
 		CE19DC7B1879F2F4005FBCE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+<<<<<<< HEAD
 			baseConfigurationReference = A2A28FAD51B14CFC99CD685A /* Pods-MyDailyTasks.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Adebayo Ijidakinro (HJPTQ3N75W)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Adebayo Ijidakinro (HJPTQ3N75W)";
+=======
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyDailyTasks/MyDailyTasks-Prefix.pch";
 				INFOPLIST_FILE = "MyDailyTasks/MyDailyTasks-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+<<<<<<< HEAD
 				PROVISIONING_PROFILE = "0C7522D9-ABB0-4F90-A28B-31376D03C960";
+=======
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		CE19DC7C1879F2F4005FBCE4 /* Release */ = {
 			isa = XCBuildConfiguration;
+<<<<<<< HEAD
 			baseConfigurationReference = A2A28FAD51B14CFC99CD685A /* Pods-MyDailyTasks.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Adebayo Ijidakinro (HJPTQ3N75W)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Adebayo Ijidakinro (HJPTQ3N75W)";
+=======
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyDailyTasks/MyDailyTasks-Prefix.pch";
 				INFOPLIST_FILE = "MyDailyTasks/MyDailyTasks-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+<<<<<<< HEAD
 				PROVISIONING_PROFILE = "0C7522D9-ABB0-4F90-A28B-31376D03C960";
+=======
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -771,7 +849,10 @@
 				CE19DC7C1879F2F4005FBCE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+<<<<<<< HEAD
 			defaultConfigurationName = Release;
+=======
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
 		};
 		CE19DC7D1879F2F4005FBCE4 /* Build configuration list for PBXNativeTarget "MyDailyTasksTests" */ = {
 			isa = XCConfigurationList;
@@ -780,6 +861,7 @@
 				CE19DC7F1879F2F4005FBCE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+<<<<<<< HEAD
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
@@ -796,6 +878,10 @@
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
+=======
+		};
+/* End XCConfigurationList section */
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
 	};
 	rootObject = CE19DC401879F2F3005FBCE4 /* Project object */;
 }

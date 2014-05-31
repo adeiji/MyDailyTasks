@@ -7,9 +7,12 @@
 //
 
 #import "ASViewController.h"
+<<<<<<< HEAD
 #import "ASAppDelegate.h"
 #import "ASTaskCell.h"
 #import "Masonry.h"
+=======
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
 
 @interface ASViewController ()
 
@@ -17,6 +20,7 @@
 
 @implementation ASViewController
 
+<<<<<<< HEAD
 @synthesize fetchedResultsController = _fetchedResultsController;
 @synthesize managedObjectContext = _managedObjectContext;
 
@@ -58,6 +62,12 @@
     self.addButton.layer.borderColor = [UIColor whiteColor].CGColor;
     self.addButton.layer.cornerRadius = self.addButton.frame.size.width / 2.0f;
     
+=======
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view, typically from a nib.
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
 }
 
 - (void)didReceiveMemoryWarning
@@ -66,6 +76,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+<<<<<<< HEAD
 #pragma mark - Table View
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -288,4 +299,6 @@
     ((ASTaskCell *) cell).uuid = [[object valueForKey:@"id"] description];
 }
 
+=======
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
 @end

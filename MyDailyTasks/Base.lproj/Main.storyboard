@@ -1,24 +1,65 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="SZl-gK-Tch">
+=======
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="SZl-gK-Tch">
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
+<<<<<<< HEAD
         <!--Navigation Controller-->
         <scene sceneID="6HW-WB-BxY">
             <objects>
                 <navigationController wantsFullScreenLayout="YES" extendedLayoutIncludesOpaqueBars="YES" definesPresentationContext="YES" navigationBarHidden="YES" id="SZl-gK-Tch" sceneMemberID="viewController">
+=======
+        <!--Table View Controller - Tasks-->
+        <scene sceneID="435-4y-DFH">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yXN-Ym-O2A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="4GW-rp-uQ0" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ogb-H4-U9B">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="TbO-Zc-084">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TbO-Zc-084" id="d2H-va-PcW">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Tasks" id="V7e-qp-bxn"/>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="590" y="254"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6HW-WB-BxY">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="SZl-gK-Tch" sceneMemberID="viewController">
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rx6-9H-QKn">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
+<<<<<<< HEAD
                         <segue destination="gCf-0t-CTt" kind="relationship" relationship="rootViewController" id="AhB-7h-7RT"/>
+=======
+                        <segue destination="4GW-rp-uQ0" kind="relationship" relationship="rootViewController" id="2LY-Q2-JmA"/>
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cLY-RU-Arp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="61" y="254"/>
         </scene>
+<<<<<<< HEAD
         <!--View Controller-->
         <scene sceneID="dyF-hf-VQR">
             <objects>
@@ -197,6 +238,9 @@
     <resources>
         <image name="plussign.png" width="160" height="160"/>
     </resources>
+=======
+    </scenes>
+>>>>>>> 96b7be53482381fdf3c169113ef6049e4b1d77a6
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
