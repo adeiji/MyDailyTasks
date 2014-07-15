@@ -1,0 +1,797 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE19DC4C1879F2F3005FBCE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE19DC4B1879F2F3005FBCE4 /* Foundation.framework */; };
+		CE19DC4E1879F2F3005FBCE4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE19DC4D1879F2F3005FBCE4 /* CoreGraphics.framework */; };
+		CE19DC501879F2F3005FBCE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE19DC4F1879F2F3005FBCE4 /* UIKit.framework */; };
+		CE19DC561879F2F3005FBCE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE19DC541879F2F3005FBCE4 /* InfoPlist.strings */; };
+		CE19DC581879F2F3005FBCE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE19DC571879F2F3005FBCE4 /* main.m */; };
+		CE19DC5C1879F2F3005FBCE4 /* ASAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE19DC5B1879F2F3005FBCE4 /* ASAppDelegate.m */; };
+		CE19DC5F1879F2F3005FBCE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE19DC5D1879F2F3005FBCE4 /* Main.storyboard */; };
+		CE19DC621879F2F3005FBCE4 /* ASViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE19DC611879F2F3005FBCE4 /* ASViewController.m */; };
+		CE19DC641879F2F3005FBCE4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE19DC631879F2F3005FBCE4 /* Images.xcassets */; };
+		CE19DC6B1879F2F3005FBCE4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE19DC6A1879F2F3005FBCE4 /* XCTest.framework */; };
+		CE19DC6C1879F2F4005FBCE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE19DC4B1879F2F3005FBCE4 /* Foundation.framework */; };
+		CE19DC6D1879F2F4005FBCE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE19DC4F1879F2F3005FBCE4 /* UIKit.framework */; };
+		CE19DC751879F2F4005FBCE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE19DC731879F2F4005FBCE4 /* InfoPlist.strings */; };
+		CE19DC771879F2F4005FBCE4 /* MyDailyTasksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE19DC761879F2F4005FBCE4 /* MyDailyTasksTests.m */; };
+		CE19DC821879F5A9005FBCE4 /* plussign.png in Resources */ = {isa = PBXBuildFile; fileRef = CE19DC811879F5A9005FBCE4 /* plussign.png */; };
+		CE19DC861879F7B0005FBCE4 /* NoTasksView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE19DC851879F7B0005FBCE4 /* NoTasksView.xib */; };
+		CE19DC8C1879FC82005FBCE4 /* ASAddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE19DC8B1879FC82005FBCE4 /* ASAddTaskViewController.m */; };
+		CE19DC90187A0268005FBCE4 /* TaskDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE19DC8E187A0268005FBCE4 /* TaskDataModel.xcdatamodeld */; };
+		CE229CAC18838D2E0006BE8E /* ASTaskManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE229CAB18838D2E0006BE8E /* ASTaskManagedObject.m */; };
+		CE582951187C97770003DA5D /* iphone-retina-launch-3-5.png in Resources */ = {isa = PBXBuildFile; fileRef = CE58294F187C97770003DA5D /* iphone-retina-launch-3-5.png */; };
+		CE582952187C97770003DA5D /* iphone-retina-launch-4.png in Resources */ = {isa = PBXBuildFile; fileRef = CE582950187C97770003DA5D /* iphone-retina-launch-4.png */; };
+		CE58296F187C97D10003DA5D /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = CE582954187C97D10003DA5D /* Icon-72.png */; };
+		CE582970187C97D10003DA5D /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE582955187C97D10003DA5D /* Icon-72@2x.png */; };
+		CE582971187C97D10003DA5D /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = CE582956187C97D10003DA5D /* Icon-Small-50.png */; };
+		CE582972187C97D10003DA5D /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE582957187C97D10003DA5D /* Icon-Small-50@2x.png */; };
+		CE582973187C97D10003DA5D /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = CE582958187C97D10003DA5D /* Icon-Small.png */; };
+		CE582974187C97D10003DA5D /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE582959187C97D10003DA5D /* Icon-Small@2x.png */; };
+		CE582975187C97D10003DA5D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CE58295A187C97D10003DA5D /* Icon.png */; };
+		CE582976187C97D10003DA5D /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE58295B187C97D10003DA5D /* Icon@2x.png */; };
+		CE582977187C97D10003DA5D /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = CE58295C187C97D10003DA5D /* iTunesArtwork.png */; };
+		CE582978187C97D10003DA5D /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE58295D187C97D10003DA5D /* iTunesArtwork@2x.png */; };
+		CE582979187C97D10003DA5D /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = CE58295F187C97D10003DA5D /* Icon-40.png */; };
+		CE58297A187C97D10003DA5D /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE582960187C97D10003DA5D /* Icon-40@2x.png */; };
+		CE58297B187C97D10003DA5D /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = CE582961187C97D10003DA5D /* Icon-60.png */; };
+		CE58297C187C97D10003DA5D /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE582962187C97D10003DA5D /* Icon-60@2x.png */; };
+		CE58297D187C97D10003DA5D /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = CE582963187C97D10003DA5D /* Icon-72.png */; };
+		CE58297E187C97D10003DA5D /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE582964187C97D10003DA5D /* Icon-72@2x.png */; };
+		CE58297F187C97D10003DA5D /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = CE582965187C97D10003DA5D /* Icon-76.png */; };
+		CE582980187C97D10003DA5D /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE582966187C97D10003DA5D /* Icon-76@2x.png */; };
+		CE582981187C97D10003DA5D /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = CE582967187C97D10003DA5D /* Icon-Small-50.png */; };
+		CE582982187C97D10003DA5D /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE582968187C97D10003DA5D /* Icon-Small-50@2x.png */; };
+		CE582983187C97D10003DA5D /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = CE582969187C97D10003DA5D /* Icon-Small.png */; };
+		CE582984187C97D10003DA5D /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE58296A187C97D10003DA5D /* Icon-Small@2x.png */; };
+		CE582985187C97D10003DA5D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CE58296B187C97D10003DA5D /* Icon.png */; };
+		CE582986187C97D10003DA5D /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE58296C187C97D10003DA5D /* Icon@2x.png */; };
+		CE582987187C97D10003DA5D /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = CE58296D187C97D10003DA5D /* iTunesArtwork.png */; };
+		CE582988187C97D10003DA5D /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE58296E187C97D10003DA5D /* iTunesArtwork@2x.png */; };
+		CE58298E187CB41B0003DA5D /* app-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CE58298B187CB41B0003DA5D /* app-icon.png */; };
+		CE58298F187CB41B0003DA5D /* settings-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CE58298C187CB41B0003DA5D /* settings-icon.png */; };
+		CE582990187CB41B0003DA5D /* spotlight-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CE58298D187CB41B0003DA5D /* spotlight-icon.png */; };
+		CE582992187CB4550003DA5D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE582991187CB4550003DA5D /* Default-568h@2x.png */; };
+		CE74AF0A187A06B800DE2314 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE74AF09187A06B800DE2314 /* CoreData.framework */; };
+		CE74AF0C187A3D5100DE2314 /* TasksList.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE74AF0B187A3D5100DE2314 /* TasksList.xib */; };
+		CE74AF0F187A44A500DE2314 /* ASTaskCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE74AF0E187A44A500DE2314 /* ASTaskCell.m */; };
+		CE74AF11187A44C600DE2314 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE74AF10187A44C600DE2314 /* TaskTableViewCell.xib */; };
+		CEE4377C187BAD6E004AD11A /* finished.png in Resources */ = {isa = PBXBuildFile; fileRef = CEE4377B187BAD6E004AD11A /* finished.png */; };
+		E300888488D14866B3D1426C /* libPods-MyDailyTasks.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 382AA4CE956B43E29ECBB632 /* libPods-MyDailyTasks.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE19DC6E1879F2F4005FBCE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE19DC401879F2F3005FBCE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE19DC471879F2F3005FBCE4;
+			remoteInfo = MyDailyTasks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		382AA4CE956B43E29ECBB632 /* libPods-MyDailyTasks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MyDailyTasks.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2A28FAD51B14CFC99CD685A /* Pods-MyDailyTasks.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyDailyTasks.xcconfig"; path = "Pods/Pods-MyDailyTasks.xcconfig"; sourceTree = "<group>"; };
+		CE19DC481879F2F3005FBCE4 /* MyDailyTasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDailyTasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE19DC4B1879F2F3005FBCE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE19DC4D1879F2F3005FBCE4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CE19DC4F1879F2F3005FBCE4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CE19DC531879F2F3005FBCE4 /* MyDailyTasks-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyDailyTasks-Info.plist"; sourceTree = "<group>"; };
+		CE19DC551879F2F3005FBCE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE19DC571879F2F3005FBCE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE19DC591879F2F3005FBCE4 /* MyDailyTasks-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyDailyTasks-Prefix.pch"; sourceTree = "<group>"; };
+		CE19DC5A1879F2F3005FBCE4 /* ASAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASAppDelegate.h; sourceTree = "<group>"; };
+		CE19DC5B1879F2F3005FBCE4 /* ASAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASAppDelegate.m; sourceTree = "<group>"; };
+		CE19DC5E1879F2F3005FBCE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE19DC601879F2F3005FBCE4 /* ASViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASViewController.h; sourceTree = "<group>"; };
+		CE19DC611879F2F3005FBCE4 /* ASViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASViewController.m; sourceTree = "<group>"; };
+		CE19DC631879F2F3005FBCE4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CE19DC691879F2F3005FBCE4 /* MyDailyTasksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyDailyTasksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE19DC6A1879F2F3005FBCE4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CE19DC721879F2F4005FBCE4 /* MyDailyTasksTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyDailyTasksTests-Info.plist"; sourceTree = "<group>"; };
+		CE19DC741879F2F4005FBCE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE19DC761879F2F4005FBCE4 /* MyDailyTasksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyDailyTasksTests.m; sourceTree = "<group>"; };
+		CE19DC811879F5A9005FBCE4 /* plussign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = plussign.png; path = imges/plussign.png; sourceTree = "<group>"; };
+		CE19DC851879F7B0005FBCE4 /* NoTasksView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoTasksView.xib; sourceTree = "<group>"; };
+		CE19DC8A1879FC82005FBCE4 /* ASAddTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASAddTaskViewController.h; sourceTree = "<group>"; };
+		CE19DC8B1879FC82005FBCE4 /* ASAddTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASAddTaskViewController.m; sourceTree = "<group>"; };
+		CE19DC8F187A0268005FBCE4 /* TaskDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaskDataModel.xcdatamodel; sourceTree = "<group>"; };
+		CE229CAA18838D2E0006BE8E /* ASTaskManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTaskManagedObject.h; sourceTree = "<group>"; };
+		CE229CAB18838D2E0006BE8E /* ASTaskManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTaskManagedObject.m; sourceTree = "<group>"; };
+		CE58294F187C97770003DA5D /* iphone-retina-launch-3-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iphone-retina-launch-3-5.png"; path = "imges/iphone-retina-launch-3-5.png"; sourceTree = "<group>"; };
+		CE582950187C97770003DA5D /* iphone-retina-launch-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iphone-retina-launch-4.png"; path = "imges/iphone-retina-launch-4.png"; sourceTree = "<group>"; };
+		CE582954187C97D10003DA5D /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		CE582955187C97D10003DA5D /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		CE582956187C97D10003DA5D /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		CE582957187C97D10003DA5D /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		CE582958187C97D10003DA5D /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		CE582959187C97D10003DA5D /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		CE58295A187C97D10003DA5D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		CE58295B187C97D10003DA5D /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		CE58295C187C97D10003DA5D /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		CE58295D187C97D10003DA5D /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		CE58295F187C97D10003DA5D /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
+		CE582960187C97D10003DA5D /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		CE582961187C97D10003DA5D /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
+		CE582962187C97D10003DA5D /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		CE582963187C97D10003DA5D /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		CE582964187C97D10003DA5D /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		CE582965187C97D10003DA5D /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		CE582966187C97D10003DA5D /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		CE582967187C97D10003DA5D /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		CE582968187C97D10003DA5D /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		CE582969187C97D10003DA5D /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		CE58296A187C97D10003DA5D /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		CE58296B187C97D10003DA5D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		CE58296C187C97D10003DA5D /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		CE58296D187C97D10003DA5D /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		CE58296E187C97D10003DA5D /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		CE58298B187CB41B0003DA5D /* app-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "app-icon.png"; path = "imges/app-icon.png"; sourceTree = "<group>"; };
+		CE58298C187CB41B0003DA5D /* settings-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settings-icon.png"; path = "imges/settings-icon.png"; sourceTree = "<group>"; };
+		CE58298D187CB41B0003DA5D /* spotlight-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "spotlight-icon.png"; path = "imges/spotlight-icon.png"; sourceTree = "<group>"; };
+		CE582991187CB4550003DA5D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CE74AF09187A06B800DE2314 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CE74AF0B187A3D5100DE2314 /* TasksList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TasksList.xib; sourceTree = "<group>"; };
+		CE74AF0D187A44A500DE2314 /* ASTaskCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASTaskCell.h; path = ../ASTaskCell.h; sourceTree = "<group>"; };
+		CE74AF0E187A44A500DE2314 /* ASTaskCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASTaskCell.m; path = ../ASTaskCell.m; sourceTree = "<group>"; };
+		CE74AF10187A44C600DE2314 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
+		CEE4377B187BAD6E004AD11A /* finished.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = finished.png; path = imges/finished.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE19DC451879F2F3005FBCE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE74AF0A187A06B800DE2314 /* CoreData.framework in Frameworks */,
+				CE19DC4E1879F2F3005FBCE4 /* CoreGraphics.framework in Frameworks */,
+				CE19DC501879F2F3005FBCE4 /* UIKit.framework in Frameworks */,
+				CE19DC4C1879F2F3005FBCE4 /* Foundation.framework in Frameworks */,
+				E300888488D14866B3D1426C /* libPods-MyDailyTasks.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE19DC661879F2F3005FBCE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE19DC6B1879F2F3005FBCE4 /* XCTest.framework in Frameworks */,
+				CE19DC6D1879F2F4005FBCE4 /* UIKit.framework in Frameworks */,
+				CE19DC6C1879F2F4005FBCE4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE19DC3F1879F2F3005FBCE4 = {
+			isa = PBXGroup;
+			children = (
+				CE582991187CB4550003DA5D /* Default-568h@2x.png */,
+				CE74AF10187A44C600DE2314 /* TaskTableViewCell.xib */,
+				CE19DC511879F2F3005FBCE4 /* MyDailyTasks */,
+				CE19DC701879F2F4005FBCE4 /* MyDailyTasksTests */,
+				CE19DC4A1879F2F3005FBCE4 /* Frameworks */,
+				CE19DC491879F2F3005FBCE4 /* Products */,
+				A2A28FAD51B14CFC99CD685A /* Pods-MyDailyTasks.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		CE19DC491879F2F3005FBCE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE19DC481879F2F3005FBCE4 /* MyDailyTasks.app */,
+				CE19DC691879F2F3005FBCE4 /* MyDailyTasksTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE19DC4A1879F2F3005FBCE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE74AF09187A06B800DE2314 /* CoreData.framework */,
+				CE19DC4B1879F2F3005FBCE4 /* Foundation.framework */,
+				CE19DC4D1879F2F3005FBCE4 /* CoreGraphics.framework */,
+				CE19DC4F1879F2F3005FBCE4 /* UIKit.framework */,
+				CE19DC6A1879F2F3005FBCE4 /* XCTest.framework */,
+				382AA4CE956B43E29ECBB632 /* libPods-MyDailyTasks.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE19DC511879F2F3005FBCE4 /* MyDailyTasks */ = {
+			isa = PBXGroup;
+			children = (
+				CE58298A187CA6E70003DA5D /* App Delegate */,
+				CE582989187CA6C00003DA5D /* Views */,
+				CE19DC8D187A0257005FBCE4 /* Core Data */,
+				CE19DC891879FC68005FBCE4 /* View Controllers */,
+				CE19DC841879F79C005FBCE4 /* Storyboards */,
+				CE19DC831879F796005FBCE4 /* XIB */,
+				CE19DC801879F599005FBCE4 /* images */,
+				CE19DC631879F2F3005FBCE4 /* Images.xcassets */,
+				CE19DC521879F2F3005FBCE4 /* Supporting Files */,
+			);
+			path = MyDailyTasks;
+			sourceTree = "<group>";
+		};
+		CE19DC521879F2F3005FBCE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE19DC531879F2F3005FBCE4 /* MyDailyTasks-Info.plist */,
+				CE19DC541879F2F3005FBCE4 /* InfoPlist.strings */,
+				CE19DC571879F2F3005FBCE4 /* main.m */,
+				CE19DC591879F2F3005FBCE4 /* MyDailyTasks-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE19DC701879F2F4005FBCE4 /* MyDailyTasksTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE19DC761879F2F4005FBCE4 /* MyDailyTasksTests.m */,
+				CE19DC711879F2F4005FBCE4 /* Supporting Files */,
+			);
+			path = MyDailyTasksTests;
+			sourceTree = "<group>";
+		};
+		CE19DC711879F2F4005FBCE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE19DC721879F2F4005FBCE4 /* MyDailyTasksTests-Info.plist */,
+				CE19DC731879F2F4005FBCE4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE19DC801879F599005FBCE4 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				CE5828A4187C8E5E0003DA5D /* icons */,
+				CEE4377B187BAD6E004AD11A /* finished.png */,
+				CE19DC811879F5A9005FBCE4 /* plussign.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		CE19DC831879F796005FBCE4 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				CE19DC851879F7B0005FBCE4 /* NoTasksView.xib */,
+				CE74AF0B187A3D5100DE2314 /* TasksList.xib */,
+			);
+			name = XIB;
+			sourceTree = "<group>";
+		};
+		CE19DC841879F79C005FBCE4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CE19DC5D1879F2F3005FBCE4 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		CE19DC891879FC68005FBCE4 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE19DC601879F2F3005FBCE4 /* ASViewController.h */,
+				CE19DC611879F2F3005FBCE4 /* ASViewController.m */,
+				CE19DC8A1879FC82005FBCE4 /* ASAddTaskViewController.h */,
+				CE19DC8B1879FC82005FBCE4 /* ASAddTaskViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CE19DC8D187A0257005FBCE4 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				CE19DC8E187A0268005FBCE4 /* TaskDataModel.xcdatamodeld */,
+				CE229CAA18838D2E0006BE8E /* ASTaskManagedObject.h */,
+				CE229CAB18838D2E0006BE8E /* ASTaskManagedObject.m */,
+			);
+			name = "Core Data";
+			sourceTree = "<group>";
+		};
+		CE5828A4187C8E5E0003DA5D /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				CE58298B187CB41B0003DA5D /* app-icon.png */,
+				CE58298C187CB41B0003DA5D /* settings-icon.png */,
+				CE58298D187CB41B0003DA5D /* spotlight-icon.png */,
+				CE582953187C97D10003DA5D /* ios */,
+				CE58295E187C97D10003DA5D /* ios7 */,
+				CE58294F187C97770003DA5D /* iphone-retina-launch-3-5.png */,
+				CE582950187C97770003DA5D /* iphone-retina-launch-4.png */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
+		CE582953187C97D10003DA5D /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				CE582954187C97D10003DA5D /* Icon-72.png */,
+				CE582955187C97D10003DA5D /* Icon-72@2x.png */,
+				CE582956187C97D10003DA5D /* Icon-Small-50.png */,
+				CE582957187C97D10003DA5D /* Icon-Small-50@2x.png */,
+				CE582958187C97D10003DA5D /* Icon-Small.png */,
+				CE582959187C97D10003DA5D /* Icon-Small@2x.png */,
+				CE58295A187C97D10003DA5D /* Icon.png */,
+				CE58295B187C97D10003DA5D /* Icon@2x.png */,
+				CE58295C187C97D10003DA5D /* iTunesArtwork.png */,
+				CE58295D187C97D10003DA5D /* iTunesArtwork@2x.png */,
+			);
+			name = ios;
+			path = imges/icon/ios;
+			sourceTree = "<group>";
+		};
+		CE58295E187C97D10003DA5D /* ios7 */ = {
+			isa = PBXGroup;
+			children = (
+				CE58295F187C97D10003DA5D /* Icon-40.png */,
+				CE582960187C97D10003DA5D /* Icon-40@2x.png */,
+				CE582961187C97D10003DA5D /* Icon-60.png */,
+				CE582962187C97D10003DA5D /* Icon-60@2x.png */,
+				CE582963187C97D10003DA5D /* Icon-72.png */,
+				CE582964187C97D10003DA5D /* Icon-72@2x.png */,
+				CE582965187C97D10003DA5D /* Icon-76.png */,
+				CE582966187C97D10003DA5D /* Icon-76@2x.png */,
+				CE582967187C97D10003DA5D /* Icon-Small-50.png */,
+				CE582968187C97D10003DA5D /* Icon-Small-50@2x.png */,
+				CE582969187C97D10003DA5D /* Icon-Small.png */,
+				CE58296A187C97D10003DA5D /* Icon-Small@2x.png */,
+				CE58296B187C97D10003DA5D /* Icon.png */,
+				CE58296C187C97D10003DA5D /* Icon@2x.png */,
+				CE58296D187C97D10003DA5D /* iTunesArtwork.png */,
+				CE58296E187C97D10003DA5D /* iTunesArtwork@2x.png */,
+			);
+			name = ios7;
+			path = imges/icon/ios7;
+			sourceTree = "<group>";
+		};
+		CE582989187CA6C00003DA5D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE74AF0D187A44A500DE2314 /* ASTaskCell.h */,
+				CE74AF0E187A44A500DE2314 /* ASTaskCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CE58298A187CA6E70003DA5D /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				CE19DC5A1879F2F3005FBCE4 /* ASAppDelegate.h */,
+				CE19DC5B1879F2F3005FBCE4 /* ASAppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE19DC471879F2F3005FBCE4 /* MyDailyTasks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE19DC7A1879F2F4005FBCE4 /* Build configuration list for PBXNativeTarget "MyDailyTasks" */;
+			buildPhases = (
+				0882BD472C7F47A1AD04C628 /* Check Pods Manifest.lock */,
+				CE19DC441879F2F3005FBCE4 /* Sources */,
+				CE19DC451879F2F3005FBCE4 /* Frameworks */,
+				CE19DC461879F2F3005FBCE4 /* Resources */,
+				02AB5FE359B74E8DAEE397D4 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyDailyTasks;
+			productName = MyDailyTasks;
+			productReference = CE19DC481879F2F3005FBCE4 /* MyDailyTasks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE19DC681879F2F3005FBCE4 /* MyDailyTasksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE19DC7D1879F2F4005FBCE4 /* Build configuration list for PBXNativeTarget "MyDailyTasksTests" */;
+			buildPhases = (
+				CE19DC651879F2F3005FBCE4 /* Sources */,
+				CE19DC661879F2F3005FBCE4 /* Frameworks */,
+				CE19DC671879F2F3005FBCE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE19DC6F1879F2F4005FBCE4 /* PBXTargetDependency */,
+			);
+			name = MyDailyTasksTests;
+			productName = MyDailyTasksTests;
+			productReference = CE19DC691879F2F3005FBCE4 /* MyDailyTasksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE19DC401879F2F3005FBCE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AS;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Ade;
+				TargetAttributes = {
+					CE19DC471879F2F3005FBCE4 = {
+						DevelopmentTeam = HJPTQ3N75W;
+					};
+					CE19DC681879F2F3005FBCE4 = {
+						TestTargetID = CE19DC471879F2F3005FBCE4;
+					};
+				};
+			};
+			buildConfigurationList = CE19DC431879F2F3005FBCE4 /* Build configuration list for PBXProject "MyDailyTasks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE19DC3F1879F2F3005FBCE4;
+			productRefGroup = CE19DC491879F2F3005FBCE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE19DC471879F2F3005FBCE4 /* MyDailyTasks */,
+				CE19DC681879F2F3005FBCE4 /* MyDailyTasksTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE19DC461879F2F3005FBCE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE582985187C97D10003DA5D /* Icon.png in Resources */,
+				CE582990187CB41B0003DA5D /* spotlight-icon.png in Resources */,
+				CE582975187C97D10003DA5D /* Icon.png in Resources */,
+				CE582973187C97D10003DA5D /* Icon-Small.png in Resources */,
+				CE58297E187C97D10003DA5D /* Icon-72@2x.png in Resources */,
+				CE58297B187C97D10003DA5D /* Icon-60.png in Resources */,
+				CE74AF0C187A3D5100DE2314 /* TasksList.xib in Resources */,
+				CE58298E187CB41B0003DA5D /* app-icon.png in Resources */,
+				CE582987187C97D10003DA5D /* iTunesArtwork.png in Resources */,
+				CE58297A187C97D10003DA5D /* Icon-40@2x.png in Resources */,
+				CE582971187C97D10003DA5D /* Icon-Small-50.png in Resources */,
+				CE58297C187C97D10003DA5D /* Icon-60@2x.png in Resources */,
+				CE582986187C97D10003DA5D /* Icon@2x.png in Resources */,
+				CEE4377C187BAD6E004AD11A /* finished.png in Resources */,
+				CE582974187C97D10003DA5D /* Icon-Small@2x.png in Resources */,
+				CE582980187C97D10003DA5D /* Icon-76@2x.png in Resources */,
+				CE58297D187C97D10003DA5D /* Icon-72.png in Resources */,
+				CE58298F187CB41B0003DA5D /* settings-icon.png in Resources */,
+				CE582988187C97D10003DA5D /* iTunesArtwork@2x.png in Resources */,
+				CE19DC821879F5A9005FBCE4 /* plussign.png in Resources */,
+				CE582951187C97770003DA5D /* iphone-retina-launch-3-5.png in Resources */,
+				CE19DC641879F2F3005FBCE4 /* Images.xcassets in Resources */,
+				CE58296F187C97D10003DA5D /* Icon-72.png in Resources */,
+				CE582983187C97D10003DA5D /* Icon-Small.png in Resources */,
+				CE582952187C97770003DA5D /* iphone-retina-launch-4.png in Resources */,
+				CE582992187CB4550003DA5D /* Default-568h@2x.png in Resources */,
+				CE58297F187C97D10003DA5D /* Icon-76.png in Resources */,
+				CE74AF11187A44C600DE2314 /* TaskTableViewCell.xib in Resources */,
+				CE582984187C97D10003DA5D /* Icon-Small@2x.png in Resources */,
+				CE19DC861879F7B0005FBCE4 /* NoTasksView.xib in Resources */,
+				CE19DC561879F2F3005FBCE4 /* InfoPlist.strings in Resources */,
+				CE582976187C97D10003DA5D /* Icon@2x.png in Resources */,
+				CE582978187C97D10003DA5D /* iTunesArtwork@2x.png in Resources */,
+				CE582972187C97D10003DA5D /* Icon-Small-50@2x.png in Resources */,
+				CE19DC5F1879F2F3005FBCE4 /* Main.storyboard in Resources */,
+				CE582977187C97D10003DA5D /* iTunesArtwork.png in Resources */,
+				CE582982187C97D10003DA5D /* Icon-Small-50@2x.png in Resources */,
+				CE582981187C97D10003DA5D /* Icon-Small-50.png in Resources */,
+				CE582979187C97D10003DA5D /* Icon-40.png in Resources */,
+				CE582970187C97D10003DA5D /* Icon-72@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE19DC671879F2F3005FBCE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE19DC751879F2F4005FBCE4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02AB5FE359B74E8DAEE397D4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-MyDailyTasks-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0882BD472C7F47A1AD04C628 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE19DC441879F2F3005FBCE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE19DC5C1879F2F3005FBCE4 /* ASAppDelegate.m in Sources */,
+				CE19DC621879F2F3005FBCE4 /* ASViewController.m in Sources */,
+				CE19DC90187A0268005FBCE4 /* TaskDataModel.xcdatamodeld in Sources */,
+				CE19DC581879F2F3005FBCE4 /* main.m in Sources */,
+				CE74AF0F187A44A500DE2314 /* ASTaskCell.m in Sources */,
+				CE19DC8C1879FC82005FBCE4 /* ASAddTaskViewController.m in Sources */,
+				CE229CAC18838D2E0006BE8E /* ASTaskManagedObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE19DC651879F2F3005FBCE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE19DC771879F2F4005FBCE4 /* MyDailyTasksTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE19DC6F1879F2F4005FBCE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE19DC471879F2F3005FBCE4 /* MyDailyTasks */;
+			targetProxy = CE19DC6E1879F2F4005FBCE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE19DC541879F2F3005FBCE4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE19DC551879F2F3005FBCE4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE19DC5D1879F2F3005FBCE4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE19DC5E1879F2F3005FBCE4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE19DC731879F2F4005FBCE4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE19DC741879F2F4005FBCE4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE19DC781879F2F4005FBCE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CE19DC791879F2F4005FBCE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE19DC7B1879F2F4005FBCE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2A28FAD51B14CFC99CD685A /* Pods-MyDailyTasks.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyDailyTasks/MyDailyTasks-Prefix.pch";
+				INFOPLIST_FILE = "MyDailyTasks/MyDailyTasks-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CE19DC7C1879F2F4005FBCE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2A28FAD51B14CFC99CD685A /* Pods-MyDailyTasks.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyDailyTasks/MyDailyTasks-Prefix.pch";
+				INFOPLIST_FILE = "MyDailyTasks/MyDailyTasks-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CE19DC7E1879F2F4005FBCE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyDailyTasks.app/MyDailyTasks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyDailyTasks/MyDailyTasks-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MyDailyTasksTests/MyDailyTasksTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CE19DC7F1879F2F4005FBCE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MyDailyTasks.app/MyDailyTasks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyDailyTasks/MyDailyTasks-Prefix.pch";
+				INFOPLIST_FILE = "MyDailyTasksTests/MyDailyTasksTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE19DC431879F2F3005FBCE4 /* Build configuration list for PBXProject "MyDailyTasks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE19DC781879F2F4005FBCE4 /* Debug */,
+				CE19DC791879F2F4005FBCE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE19DC7A1879F2F4005FBCE4 /* Build configuration list for PBXNativeTarget "MyDailyTasks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE19DC7B1879F2F4005FBCE4 /* Debug */,
+				CE19DC7C1879F2F4005FBCE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE19DC7D1879F2F4005FBCE4 /* Build configuration list for PBXNativeTarget "MyDailyTasksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE19DC7E1879F2F4005FBCE4 /* Debug */,
+				CE19DC7F1879F2F4005FBCE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE19DC8E187A0268005FBCE4 /* TaskDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE19DC8F187A0268005FBCE4 /* TaskDataModel.xcdatamodel */,
+			);
+			currentVersion = CE19DC8F187A0268005FBCE4 /* TaskDataModel.xcdatamodel */;
+			path = TaskDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CE19DC401879F2F3005FBCE4 /* Project object */;
+}
