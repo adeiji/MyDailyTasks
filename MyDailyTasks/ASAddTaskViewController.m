@@ -75,32 +75,44 @@
 
 - (IBAction)addTaskPressed:(id)sender {
     
-    ASAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    if ([[self.mainTextView.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] length] > 0)
+    {
     
-    NSString *task = self.mainTextView.text;
-    ASTaskManagedObject *object = [NSEntityDescription insertNewObjectForEntityForName:@"Tasks" inManagedObjectContext:delegate.managedObjectContext];
-    
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(dataSaved)
-                                                 name:NSManagedObjectContextDidSaveNotification
-                                               object:nil];
-    
-    [object setValue:task forKey:@"task"];
-    [object setValue:[NSDate date] forKey:@"date"];
-    [object setValue:[[NSUUID UUID] UUIDString] forKey:@"id"];
-    
-    NSError *error = nil;
-    
-    [self performSelectorOnMainThread:@selector(saveContext:) withObject:delegate waitUntilDone:YES];
-    
-    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Tasks"];
-    [request setPredicate:nil];
-    
-    NSArray *objects = [delegate.managedObjectContext executeFetchRequest:request error:&error];
-    NSDictionary *tasksDictionary = [NSDictionary dictionaryWithObjectsAndKeys:objects, @"tasks", delegate, @"delegate", nil];
-    
-    [self performSelectorOnMainThread:@selector(resetTasks:) withObject:tasksDictionary waitUntilDone:YES];
+        ASAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+        
+        NSString *task = self.mainTextView.text;
+        ASTaskManagedObject *object = [NSEntityDescription insertNewObjectForEntityForName:@"Tasks" inManagedObjectContext:delegate.managedObjectContext];
+        
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(dataSaved)
+                                                     name:NSManagedObjectContextDidSaveNotification
+                                                   object:nil];
+        
+        NSDateComponents *components = [[NSCalendar currentCalendar]
+                                        components:NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit
+                                        fromDate:[NSDate date]];
+        
+        NSDate *date = [[NSCalendar currentCalendar]
+                             dateFromComponents:components];
+//        NSTimeInterval timeInterval = -60 * 60 * 24;
+//        date = [date dateByAddingTimeInterval:timeInterval];
+        [object setValue:task forKey:@"task"];
+        [object setValue:date forKey:@"date"];
+        [object setValue:[[NSUUID UUID] UUIDString] forKey:@"id"];
+        
+        NSError *error = nil;
+        
+        [self performSelectorOnMainThread:@selector(saveContext:) withObject:delegate waitUntilDone:YES];
+        
+        NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Tasks"];
+        [request setPredicate:nil];
+        
+        NSArray *objects = [delegate.managedObjectContext executeFetchRequest:request error:&error];
+        NSDictionary *tasksDictionary = [NSDictionary dictionaryWithObjectsAndKeys:objects, @"tasks", delegate, @"delegate", nil];
+        
+        [self performSelectorOnMainThread:@selector(resetTasks:) withObject:tasksDictionary waitUntilDone:YES];
+    }
 }
 
 - (void) dataSaved

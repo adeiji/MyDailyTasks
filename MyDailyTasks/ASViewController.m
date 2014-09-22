@@ -55,7 +55,6 @@
     self.addButton.layer.borderWidth = 2.0;
     self.addButton.layer.borderColor = [UIColor whiteColor].CGColor;
     self.addButton.layer.cornerRadius = self.addButton.frame.size.width / 2.0f;
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -252,11 +251,13 @@
     NSDate *date = [object valueForKey:@"date"];
     NSCalendar *calendar = [NSCalendar currentCalendar];
     //Get the day from the date stored within this managed object.
-    NSDateComponents *components = [calendar components:NSDayCalendarUnit fromDate:date];
+    NSDateComponents *components = [calendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit fromDate:date];
+    date = [calendar dateFromComponents:components];
     
     NSDate *today = [NSDate date];
     //Get the day from today's date.
-    NSDateComponents *todayComponents = [calendar components:NSDayCalendarUnit fromDate:today];
+    NSDateComponents *todayComponents = [calendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit fromDate:today];
+    today = [calendar dateFromComponents:todayComponents];
     
     //Check to see if this task has been completed or not.
     if ([[object valueForKey:@"completed"] isEqualToNumber:[NSNumber numberWithBool:YES]])
@@ -266,7 +267,7 @@
         [button setTitle:@"" forState:UIControlStateNormal];
         button.layer.backgroundColor = [UIColor clearColor].CGColor;
     
-        if ([components day] < [todayComponents day])
+        if ([date compare:today] == NSOrderedAscending)
         {
             NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
             [context deleteObject:[self.fetchedResultsController objectAtIndexPath:indexPath]];
@@ -276,7 +277,7 @@
     }
     else
     {
-        if ([components day] < [todayComponents day])
+        if ([date compare:today] == NSOrderedAscending)
         {
             ((ASTaskCell *) cell).lblTask.textColor = [UIColor redColor];
         }
