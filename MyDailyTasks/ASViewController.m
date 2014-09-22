@@ -49,6 +49,14 @@
     self.tableView.dataSource = self;
     [self.mainView addSubview:self.tableView];
     
+    
+    [self.noItemsView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.noItemsView.superview);
+    }];
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.tableView.superview);
+    }];
+    
     [super viewDidLoad];
     
     //Set the border information for the add button.
