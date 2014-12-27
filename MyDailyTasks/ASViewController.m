@@ -108,7 +108,8 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
+        ASAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+        NSManagedObjectContext *context = delegate.managedObjectContext;
         [context deleteObject:[self.fetchedResultsController objectAtIndexPath:indexPath]];
         
         [self saveContext:context];
@@ -174,7 +175,7 @@
     
     // Edit the section name key path and cache name if appropriate.
     // nil for section name key path means "no sections".
-    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:@"Master"];
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
     aFetchedResultsController.delegate = self;
     self.fetchedResultsController = aFetchedResultsController;
     
@@ -252,20 +253,24 @@
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
-    
-    NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    UIButton *button = ((ASTaskCell *) cell).doneButton;
-    
-    NSDate *date = [object valueForKey:@"date"];
+
+    NSDate *date = [[self.fetchedResultsController objectAtIndexPath:indexPath ] valueForKey:@"date"];
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    //Get the day from the date stored within this managed object.
+    //Get the day from the date stored within this managed object just month year day
     NSDateComponents *components = [calendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit fromDate:date];
     date = [calendar dateFromComponents:components];
     
     NSDate *today = [NSDate date];
-    //Get the day from today's date.
+    NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    UIButton *button = ((ASTaskCell *) cell).doneButton;
+    
+    //Get the day from today's date without just month year day
     NSDateComponents *todayComponents = [calendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit fromDate:today];
     today = [calendar dateFromComponents:todayComponents];
+    
+    ((ASTaskCell *) cell).lblTask.text  = [NSString stringWithFormat:@"%@", [[object valueForKey:@"task"] description ]];
+    //Get the UUID of the task and store it in the cell object.
+    ((ASTaskCell *) cell).uuid = [[object valueForKey:@"id"] description];
     
     //Check to see if this task has been completed or not.
     if ([[object valueForKey:@"completed"] isEqualToNumber:[NSNumber numberWithBool:YES]])
@@ -274,14 +279,6 @@
         [button setImage:[UIImage imageNamed:@"finished.png"] forState:UIControlStateNormal];
         [button setTitle:@"" forState:UIControlStateNormal];
         button.layer.backgroundColor = [UIColor clearColor].CGColor;
-    
-        if ([date compare:today] == NSOrderedAscending)
-        {
-            NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
-            [context deleteObject:[self.fetchedResultsController objectAtIndexPath:indexPath]];
-            
-            [self saveContext:context];
-        }
     }
     else
     {
@@ -291,9 +288,6 @@
         }
     }
     
-    ((ASTaskCell *) cell).lblTask.text  = [NSString stringWithFormat:@"%@", [[object valueForKey:@"task"] description ]];
-    //Get the UUID of the task and store it in the cell object.
-    ((ASTaskCell *) cell).uuid = [[object valueForKey:@"id"] description];
 }
 
 @end

@@ -41,21 +41,41 @@
     
     //Get the global delegate so that we can access the managedObjectContext.
     ASAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-    ASTaskCell *cell = (ASTaskCell*) button.superview.superview.superview ;
+    ASTaskCell *cell = (ASTaskCell*) button.superview.superview ;
     
     //Fetch the record where the Task == ASTaskCell label
     NSFetchRequest *fetch = [[NSFetchRequest alloc] initWithEntityName:@"Tasks"];
     [fetch setPropertiesToFetch:[NSArray arrayWithObject:@"id"]];
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"id == %@", cell.uuid];
     [fetch setPredicate:predicate];
-    
     NSArray *objects = [delegate.managedObjectContext executeFetchRequest:fetch error:&error];
-    
     NSManagedObject *task = [objects objectAtIndex:0];
     
     [task setValue:[NSNumber numberWithBool:YES] forKey:@"completed"];
+    [self checkForDelete:task];
+    [self saveContext:delegate];
+}
+
+- (void) checkForDelete : (NSManagedObject *) object {
     
-    [self performSelectorOnMainThread:@selector(saveContext:) withObject:delegate waitUntilDone:YES];
+    NSDate *date = [object valueForKey:@"date"];
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    //Get the day from the date stored within this managed object just month year day
+    NSDateComponents *components = [calendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit fromDate:date];
+    date = [calendar dateFromComponents:components];
+    
+    NSDate *today = [NSDate date];
+    //Get the day from today's date without just month year day
+    NSDateComponents *todayComponents = [calendar components:NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit fromDate:today];
+    today = [calendar dateFromComponents:todayComponents];
+    
+    if ([date compare:today] == NSOrderedAscending)
+    {
+        ASAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+        NSManagedObjectContext *context = [delegate managedObjectContext];
+        [context deleteObject:object];
+        [self saveContext:delegate];
+    }
 }
 
 - (void) saveContext : (ASAppDelegate *) delegate
