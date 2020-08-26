@@ -32,8 +32,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    self.barView.layer.borderColor = [UIColor blackColor].CGColor;
-    self.barView.layer.borderWidth = .5f;
+//    self.barView.layer.borderColor = [UIColor blackColor].CGColor;
+//    self.barView.layer.borderWidth = .5f;
     
     self.cancelOkButton.layer.borderWidth = .5f;
     self.cancelOkButton.layer.borderColor = [UIColor blackColor].CGColor;

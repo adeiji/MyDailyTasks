@@ -232,6 +232,11 @@
                 UIView *view = [[[NSBundle mainBundle] loadNibNamed:@"NoTasksView" owner:self options:nil] objectAtIndex:0];
                 
                 [self.mainView addSubview:view];
+                
+                [view mas_makeConstraints:^(MASConstraintMaker *make) {
+                    make.edges.equalTo(self.mainView);
+                }];
+                
             }
             break;
         }

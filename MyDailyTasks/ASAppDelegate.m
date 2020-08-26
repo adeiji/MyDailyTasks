@@ -9,6 +9,7 @@
 #import "ASAppDelegate.h"
 #import <CoreData/CoreData.h>
 #import "ASViewController.h"
+#import <GoogleMobileAds/GoogleMobileAds.h>
 
 @implementation ASAppDelegate
 
@@ -29,6 +30,7 @@
     UINavigationController *controller = (UINavigationController *) self.window.rootViewController;
     ASViewController *rootViewController = controller.viewControllers[0];
     rootViewController.managedObjectContext = context;
+    [[GADMobileAds sharedInstance] startWithCompletionHandler:nil];
     
     return YES;
 }
